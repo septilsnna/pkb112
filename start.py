@@ -13,8 +13,8 @@ t_labels = np.array(t_labels)
 
 print_statistics(images, t_images, labels, t_labels)
 
-bias = np.ones((images.shape,1))
-t_bias = np.ones((t_images.shape,1))
+bias = np.ones((images.shape[0],1))
+t_bias = np.ones((t_images.shape[0],1))
 
 np.hstack(bias, images)
 np.hstack(t_bias, t_images)
