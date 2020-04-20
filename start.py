@@ -12,3 +12,9 @@ labels = np.array(labels)
 t_labels = np.array(t_labels)
 
 print_statistics(images, t_images, labels, t_labels)
+
+train.X = np.ones(images.shape)
+test.X = np.ones(t_images.shape)
+
+np.hstack(train.X, images)
+np.hstack(test.X, t_images)
