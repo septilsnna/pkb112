@@ -20,4 +20,4 @@ images = np.hstack((bias,images))
 t_bias = np.ones((m2,1))
 t_images = np.hstack((t_bias,t_images))
 
-theta = np.random.rand(m,n-1)
+theta = np.random.rand(m,n-1)*0.001
